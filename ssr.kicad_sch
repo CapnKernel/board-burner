@@ -5,6 +5,139 @@
 	(uuid "7c9c5569-bc8d-40ed-9455-60311e11bfd2")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Q_NMOS_DGS"
 			(pin_names
 				(offset 0) hide)
@@ -1092,7 +1225,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 85.09) (xy 162.56 76.2)
+			(xy 171.45 85.09) (xy 171.45 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1112,7 +1245,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 87.63) (xy 166.37 87.63)
+			(xy 147.32 87.63) (xy 175.26 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1182,7 +1315,7 @@
 	)
 	(polyline
 		(pts
-			(xy 139.7 92.71) (xy 177.8 92.71)
+			(xy 139.7 92.71) (xy 186.69 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1212,7 +1345,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 85.09) (xy 162.56 85.09)
+			(xy 175.26 85.09) (xy 171.45 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1272,7 +1405,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 73.66) (xy 147.32 73.66)
+			(xy 175.26 73.66) (xy 165.1 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1282,7 +1415,7 @@
 	)
 	(polyline
 		(pts
-			(xy 139.7 67.945) (xy 177.8 67.945)
+			(xy 139.7 67.945) (xy 186.69 67.945)
 		)
 		(stroke
 			(width 0)
@@ -1332,7 +1465,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 76.2) (xy 166.37 76.2)
+			(xy 157.48 73.66) (xy 147.32 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef296a12-0e09-4ba4-bec1-5a7c53e05b1b")
+	)
+	(wire
+		(pts
+			(xy 171.45 76.2) (xy 175.26 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1362,7 +1505,7 @@
 	)
 	(hierarchical_label "LOAD_A"
 		(shape input)
-		(at 166.37 87.63 0)
+		(at 175.26 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1374,7 +1517,7 @@
 	)
 	(hierarchical_label "LOAD_N"
 		(shape input)
-		(at 166.37 85.09 0)
+		(at 175.26 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1398,7 +1541,7 @@
 	)
 	(hierarchical_label "MAINS_N"
 		(shape input)
-		(at 166.37 76.2 0)
+		(at 175.26 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1410,7 +1553,7 @@
 	)
 	(hierarchical_label "MAINS_A"
 		(shape input)
-		(at 166.37 73.66 0)
+		(at 175.26 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1883,6 +2026,82 @@
 				)
 				(path "/8e8c1c81-e974-4404-a855-b409907250d2/6c0544fa-e726-4e16-b2f3-fde221c87365"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 161.29 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ed26a2c-1682-4bc2-9852-17d5ad920ea6")
+		(property "Reference" "F1"
+			(at 161.29 68.7535 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 161.29 71.1778 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 75.438 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "371de3cd-182d-4f72-9192-0ee03c33b267")
+		)
+		(pin "1"
+			(uuid "61e3a3db-fc86-43db-b9d0-a9b5391d18d1")
+		)
+		(instances
+			(project "board-burner"
+				(path "/8e8c1c81-e974-4404-a855-b409907250d2/ff0e7100-4e2e-4758-a58c-100462f0abae"
+					(reference "F1")
+					(unit 1)
+				)
+				(path "/8e8c1c81-e974-4404-a855-b409907250d2/978f5725-fdb0-40aa-a547-4154f864a506"
+					(reference "F2")
+					(unit 1)
+				)
+				(path "/8e8c1c81-e974-4404-a855-b409907250d2/6c0544fa-e726-4e16-b2f3-fde221c87365"
+					(reference "F3")
 					(unit 1)
 				)
 			)
