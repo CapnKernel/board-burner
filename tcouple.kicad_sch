@@ -714,9 +714,9 @@
 		)
 		(uuid "fcdee73d-6ec4-4043-8c53-b95fbc4d74b4")
 	)
-	(text "Thermocouples"
+	(text "Thermocouple interface"
 		(exclude_from_sim no)
-		(at 128.524 65.278 0)
+		(at 128.524 63.5 0)
 		(effects
 			(font
 				(size 3.81 3.81)

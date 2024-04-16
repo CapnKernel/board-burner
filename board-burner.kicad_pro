@@ -334,11 +334,41 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -395,10 +425,6 @@
       "ssr2"
     ],
     [
-      "6c0544fa-e726-4e16-b2f3-fde221c87365",
-      "ssr3"
-    ],
-    [
       "095ba5aa-eefc-4d4e-bbef-b394e727df68",
       "tcouple1"
     ],
@@ -409,6 +435,14 @@
     [
       "3a01bd58-1a3b-4e76-aeaa-8d3fec8da0f4",
       "peripherals"
+    ],
+    [
+      "984732a5-2bc4-4187-ad41-98eb9e6157f7",
+      "power"
+    ],
+    [
+      "f5651fc1-88de-404d-94d8-80958524c42c",
+      "dc"
     ]
   ],
   "text_variables": {}
