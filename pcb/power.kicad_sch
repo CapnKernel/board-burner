@@ -4243,6 +4243,126 @@
 				)
 			)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 142.24 135.89)
@@ -4311,6 +4431,12 @@
 		(uuid "bb166aff-4c2d-4399-a27f-726fada6be99")
 	)
 	(junction
+		(at 130.81 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bdbb9e4b-7bdb-4297-9ed4-a0cf39051b0c")
+	)
+	(junction
 		(at 101.6 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4376,7 +4502,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 63.5) (xy 133.35 63.5)
+			(xy 129.54 63.5) (xy 130.81 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4473,6 +4599,16 @@
 			(type default)
 		)
 		(uuid "272f6481-2cf2-4e94-97cc-28afbdc3ef7e")
+	)
+	(wire
+		(pts
+			(xy 130.81 63.5) (xy 133.35 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "280a829b-ac1c-4807-b83b-98b6701dfe81")
 	)
 	(wire
 		(pts
@@ -4603,6 +4739,16 @@
 			(type default)
 		)
 		(uuid "5daeb1e1-459e-4c76-b349-9daaf025b3f1")
+	)
+	(wire
+		(pts
+			(xy 208.28 123.19) (xy 217.17 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcba95e-b35c-45ea-98d0-50bf73ed7827")
 	)
 	(wire
 		(pts
@@ -5204,6 +5350,16 @@
 		)
 		(uuid "fc3055d9-6513-4610-8d96-251ed639147a")
 	)
+	(wire
+		(pts
+			(xy 130.81 60.96) (xy 130.81 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff011839-1304-433c-b94a-98a2ec80a1c6")
+	)
 	(text "Soft switch"
 		(exclude_from_sim no)
 		(at 126.492 110.998 0)
@@ -5255,6 +5411,17 @@
 			(justify left bottom)
 		)
 		(uuid "45601d9f-96d6-4c50-b055-868b3d993a9e")
+	)
+	(label "LA"
+		(at 217.17 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58ce5de1-f361-4e11-be81-683690e08466")
 	)
 	(label "D-"
 		(at 137.16 81.28 180)
@@ -5404,7 +5571,7 @@
 		(dnp no)
 		(uuid "16852d02-d1e3-4971-8854-1c46da5ca75d")
 		(property "Reference" "R12"
-			(at 135.382 73.66 90)
+			(at 134.874 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,7 +6190,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "315d0d67-2519-4542-8270-0446de4b94f7")
 		(property "Reference" "J8"
 			(at 115.57 56.8155 0)
@@ -6034,7 +6200,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 115.57 59.2398 0)
+			(at 109.982 59.182 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,7 +6216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
 			(at 119.38 78.74 0)
 			(effects
 				(font
@@ -6060,6 +6226,15 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(at 115.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C165948"
 			(at 115.57 78.74 0)
 			(effects
 				(font
@@ -6252,72 +6427,6 @@
 			(project "board-burner"
 				(path "/8e8c1c81-e974-4404-a855-b409907250d2/984732a5-2bc4-4187-ad41-98eb9e6157f7"
 					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 78.74 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b51b5bd-3735-4ba0-8267-89729b50b7f7")
-		(property "Reference" "#PWR074"
-			(at 78.74 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 78.74 49.2069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 78.74 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "121c0195-8419-4643-b3fe-9c9df74ccbfb")
-		)
-		(instances
-			(project "board-burner"
-				(path "/8e8c1c81-e974-4404-a855-b409907250d2/984732a5-2bc4-4187-ad41-98eb9e6157f7"
-					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -6797,6 +6906,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 130.81 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51ab41f0-0d52-492e-b60d-e13b1e25bcc0")
+		(property "Reference" "#PWR042"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 130.81 56.8269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3334d1a-a0a5-49a0-9430-ce53f64fda01")
+		)
+		(instances
+			(project "board-burner"
+				(path "/8e8c1c81-e974-4404-a855-b409907250d2/984732a5-2bc4-4187-ad41-98eb9e6157f7"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 213.36 21.59 0)
 		(unit 1)
@@ -7076,7 +7251,7 @@
 		(dnp no)
 		(uuid "6a29b450-bf89-41af-a973-8dbbfb51c200")
 		(property "Reference" "R13"
-			(at 135.382 66.294 90)
+			(at 134.874 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7600,6 +7775,72 @@
 			(project "board-burner"
 				(path "/8e8c1c81-e974-4404-a855-b409907250d2/984732a5-2bc4-4187-ad41-98eb9e6157f7"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 78.74 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ce852f5-0dcc-4a66-8d5b-4922c2e8b142")
+		(property "Reference" "#PWR043"
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 78.74 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "382f075b-dc32-4ec5-81a4-bc78ae862bb5")
+		)
+		(instances
+			(project "board-burner"
+				(path "/8e8c1c81-e974-4404-a855-b409907250d2/984732a5-2bc4-4187-ad41-98eb9e6157f7"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
